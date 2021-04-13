@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @task.tname %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @task.date %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @task.desc %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task), class:"btn btn-primary btn-sm" %> 
+<br/>
+<br/>
+<%= link_to 'Back', tasks_path, class:"btn btn-danger btn-sm" %>
